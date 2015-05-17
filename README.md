@@ -1,9 +1,11 @@
 # furry-octo-tribble
 
 
-<h5> 
+<h5 font color="#565656"> 
 auth  dev app  example  : leak
+
  Client ID: 57f67c18840ba7b3307c 
+ 
 and   clsecret
 
 Homepage URL
