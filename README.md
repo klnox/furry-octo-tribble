@@ -1,15 +1,15 @@
 # furry-octo-tribble
 
 
-<font color="#565656">
-*auth  dev app  example  : leak
+<font color="#567d56">
+* auth  dev app  example  : leak
 
 * Client ID: 57f67c18840ba7b3307c 
  
-*and   clsecret
+* and   clsecret
 
-*Homepage URL
+* Homepage URL
 
-*d'autre part  Personal access tokens
+* d'autre part  Personal access tokens
 
 </font>
