@@ -1,0 +1,70 @@
+Ce processus de service engagent commentaires et demande de traction des descriptions et des recherches pour l'ID d'émission de YouTrack et commandes.
+ Les commandes sont appliquées à des questions, associé à commettre ou tirez demande.
+ 1.
+Exigences YouTrack
+ ◦
+Nécessite YouTrack version 2.0 ou supérieure. YouTrack énergie EAP construit sont
+ soutenue ainsi.
+
+ ◦
+Votre serveur YouTrack doit être accessible à partir d'Internet.
+
+ ◦
+API REST doit être activé dans votre serveur YouTrack. Il peut être réglé dans le menu Réglages YouTrack.
+
+ ◦
+Les adresses email de committers dans GitHub et YouTrack devraient être les mêmes.
+ YouTrack semble pour le compte d'utilisateur d'un committer par une adresse email, dont le
+ commiter a enregistré dans GitHub. Si YouTrack ne trouve pas un compte d'utilisateur avec le
+ même email que l'e-mail de committer, une commande spécifiée dans commettent de commentaire ne sera pas appliquée.
+
+ 
+2.
+Réglages dans GitHub
+
+Dans l'intégration config GitHub, les paramètres suivants doivent être fournis:
+ ◦
+URL de base: YouTrack URL du serveur
+
+ ◦
+Committers: Nom d'un groupe d'utilisateurs dans YouTrack, dans lequel YouTrack va rechercher pour le compte de committer.
+
+ ◦
+Nom d'utilisateur: le compte de l'administrateur (par exemple 'root' utilisateur ou administrateur rôle) des informations d'identification pour accéder à votre serveur de YouTrack.
+
+ ◦
+Direction: Les noms de Direction à la piste séparées par un espace. Si les branches sont fournis, ne commet à ces branches déclenchera
+ Commandes YouTrack et commet à d'autres seront ignorés. Si le champ de branche est laissé vide, commet sur toute branche va déclencher des commandes.
+
+ ◦
+Processus distinct: Si seulement commits distincts doivent être traitées. Si ce paramètre est faux, même commit peuvent être traitées plusieurs fois
+ (Par exemple, lorsque les branches sont fusionnés)
+
+ ◦
+Mot de passe: un mot de passe de YouTrack Nom d'utilisateur. Nom d'utilisateur doit avoir le rôle Administrateur.
+
+ 
+•
+Informations Complémentaires
+ ◦
+Introduction à invoquer des commandes par YouTrack commentaires GitHub
+
+ ◦
+La documentation officielle de l'intégration
+
+ ◦
+walkthrough de configuration vidéo
+
+ ◦
+Commandes YouTrack grammaire
+
+ 
+•
+Dépannage
+ ◦
+Les erreurs de branchements GitHub
+ ■
+problème d'authentification: Vous pourriez avoir à régénérer jeton dans GibHub> Applications> accès personnel menu jetons et taper au moment de YouTrack paramètres du projet GitHub>> Modifier menu.
+
+ ■
+400: Impossible d'analyser les commandes à partir de GitHub YouTrack commettre commentaires. Réponse connexes
