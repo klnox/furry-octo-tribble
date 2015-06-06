@@ -1,1 +1,6 @@
 !/etc/sudoers
+
+install tou track serv
+
+read this one access help git in merge pull request
+https://github.com/klnox/furry-octo-tribble/pull/2.patch
