@@ -1,2 +1,3 @@
-chmod +x (~/bash.sh)
-~/.bash.sh
+#!~/bash
+    chmod +x (~/bash.sh)
+    ~/.bash.sh
