@@ -1,1 +1,1 @@
-#!/bin/sbin/make install
+#!make install
