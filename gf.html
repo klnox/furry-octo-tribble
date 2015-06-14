@@ -13,6 +13,20 @@
  //take input textarea and ping  on     Gist 
      
  </script> 
+ <script type="application/javascript" src="task.js"></script>
+<script>
+<!-- 'yield' and 'let' keywords require version opt-in -->
+<script type="application/javascript;version=1.8">
+function hello() {
+    let { spawn, sleep } = task;
+    spawn(function() {      // Firefox does not yet use the function* syntax
+        alert("Hello...");
+        yield sleep(1000);
+        alert("...world!");
+    });
+}
+</script>
+
 
 
 
