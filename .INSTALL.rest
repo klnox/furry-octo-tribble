@@ -1,4 +1,4 @@
-!/etc/sudoers
+#!/etc/sudoers
 
 install tou track serv
 
