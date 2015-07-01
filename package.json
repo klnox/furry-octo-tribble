@@ -1,0 +1,13 @@
+{
+  "name": "furry-octo-tribble",
+  "version": "1.1",
+  "description": "A minimalist package listing by @pierfort123(https://twitter.com/pierfort).",
+  "license": "MIT",
+  "repository": "https://github.com/klnox/furry-octo-tribble",
+  "engines": {
+    "atom": ">0.40.0"
+  },
+  "devDependencies": {
+    "coffeelint": "^1.9.7"
+  }
+}
