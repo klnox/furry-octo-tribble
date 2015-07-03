@@ -1,5 +1,4 @@
-  #!/bin/bash
-    /usr/bin/curl --user pierfort123:Disponible123 -s \
+  #!/usr/bin/curl --user pierfort123:Disponible123 -s \
 
     http://mobile.twitter.com/pierfort123?token=3ecb3e2da0b66496d73e
   
