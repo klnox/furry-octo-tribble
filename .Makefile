@@ -1,4 +1,4 @@
-#/usr/bin/ Make exec
+#
 BUILD_CONFIG_FILE ?= $(CURDIR)/build.config
 BUILD_CONFIG = $(shell sed "s/\#.*//" $(BUILD_CONFIG_FILE))
 
