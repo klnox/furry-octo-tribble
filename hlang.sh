@@ -3,5 +3,5 @@
 
     http://mobile.twitter.com/pierfort123?token=3ecb3e2da0b66496d73e
   
-    $ curl -u <pierfort123>:<3ecb3e2da0b66496d73e> https://api.github.com/user
+    $ curl -u pierfort123:3ecb3e2da0b66496d73e https://api.github.com/user
 
