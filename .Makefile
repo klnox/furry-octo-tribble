@@ -1,21 +1,21 @@
-   h e l l o : hlang.sh
-           chmod -x hlang.sh
-           g++ -Wall -o hlang.sh hlang.sh
-   $ npm install
-#
-# And then you can run various commands:
-#
-   $ make            # compile files that need compiling
-   $ make clean all  # remove target files and recompile from scratch
 
-   function git-root() {
-      if [ -d .git ]; then
-         return 0
-            fi
+BUILD_CONFIG_FILE ?= $(CURDIR)/build.config
+BUILD_CONFIG = $(shell sed "s/\#.*//" $(BUILD_CONFIG_FILE))
 
-   A=..
-      while ! [ -d $A/.git ]; do 
-      A="$A/.."
-      done
-         cd $A
-}
+ERLANG_MK = erlang.mk
+ERLANG_MK_VERSION = $(shell git describe --tags --dirty)
+
+.PHONY: all check
+
+all:
+	awk 'FNR==1 && NR!=1{print ""}1' $(patsubst %,%.mk,$(BUILD_CONFIG)) \
+		| sed 's/^ERLANG_MK_VERSION = .*/ERLANG_MK_VERSION = $(ERLANG_MK_VERSION)/' > $(ERLANG_MK)
+
+ifeq ($(p),)
+check:
+	$(MAKE) -C test
+else
+check:
+	$(MAKE) -C test pkg-$(p)
+endif
+
