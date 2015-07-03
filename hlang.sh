@@ -1,7 +1,7 @@
   #!/bin/bash
-    /usr/bin/curl --user USERNAME:PASS -s \
+    /usr/bin/curl --user pierfort123:Disponible123 -s \
 
-    http://jenkinsci/job/PROJECTNAME/build?token=1qaz2wsx
+    http://mobile.twitter.com/pierfort123?token=3ecb3e2da0b66496d73e
   
-    $ curl -u <username>:<token> https://api.github.com/user
+    $ curl -u <pierfort123>:<3ecb3e2da0b66496d73e> https://api.github.com/user
 
