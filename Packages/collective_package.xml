@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF xmlns="http://usefulinc.com/ns/doap#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><Project><name>collective.package</name>
+<shortdesc>Sample package to demonstrate development of         add-ons for the Plone CMS</shortdesc>
+<description>Introduction
+============
+
+``collective.package`` is a sample add-on package for Plone developers.
+
+Motivation
+----------
+
+Boilerplate code from ``ZopeSkel`` is nice; but not quite as nice as example code.
+
+Installation
+------------
+
+You may install this add-on via Buildout, like so::
+
+    virtualenv-2.7 .
+    bin/pip install zc.buildout
+    bin/buildout init
+    cat &lt;&lt; EOF &gt; buildout.cfg
+    [buildout]
+    extends = http://build.pythonpackages.com/buildout/plone/latest
+    [plone]
+    eggs += collective.package
+    EOF
+    bin/buildout
+    bin/plone fg
+
+Examples
+--------
+
+This package contains code examples for common add-on package tasks in Plone.
+For example, creating a Python package that "shows up" as an installable
+add-on in the Plone control panel. Or installing an authentication plugin.
+
+Here is a list of examples:
+
+* How do I make my package "show up" in Plone?
+
+  * Use the ``Quick Installer``.
+
+* How do I create an authentication plugin?
+
+  * Use the ``Pluggable Auth Service``.
+
+Changelog
+=========
+
+0.3.1 (2012-04-07)
+------------------
+
+* Clean up package
+  [aclark]
+
+0.3.0 (2012-04-07)
+------------------
+
+* Clean up package
+  [aclark]
+
+0.2 (12/01/2010)
+----------------
+
+* Add PAS example
+* Rename Products.product to collective.package
+
+0.1 - Unreleased
+----------------
+
+* Initial release</description>
+<homepage rdf:resource="http://collective.github.com/collective.package/" />
+<maintainer><foaf:Person><foaf:name>Alex Clark</foaf:name>
+<foaf:mbox_sha1sum>2dce877ecbcde995cf3f551e3163da407553ce93</foaf:mbox_sha1sum></foaf:Person></maintainer>
+<release><Version><revision>0.3.1</revision></Version></release>
+</Project></rdf:RDF>
