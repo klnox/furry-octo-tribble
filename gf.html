@@ -25,6 +25,14 @@ function hello() {
         alert("...world!");
     });
 }
+
+function myFunction() {
+    var person = prompt("Please enter your name", "Harry Potter");
+    if (person != null) {
+        document.getElementById("demo").innerHTML =
+        "Hello " + person + "! How are you today?";
+    }
+}
 </script>
 
 
@@ -49,5 +57,9 @@ c.text(10, 5, "line five, column ten")
  <FORM action="http://klnox.github.io/furry-octo-tribble/gf.html" method="GET">
  <p> <ISINDEX prompt="Enter your search phrase: "><input type="text" ></p>
 </FORM>
+  <button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
 
 </body>
