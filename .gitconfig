@@ -2,3 +2,27 @@
 WS=$(git config --get-color color.diff.whitespace "blue reverse")
 RESET=$(git config --get-color "" "reset")
 echo "${WS}your whitespace color or blue reverse${RESET}"
+
+# Core variables
+[core]
+    ; Don't trust file modes
+    filemode = false 
+
+# Our diff algorithm
+[diff]
+    external = /usr/local/bin/diff-wrapper
+    renames = true 
+
+[branch "devel"]
+    remote = origin
+    merge = refs/heads/devel 
+
+# Proxy settings
+[core]
+    gitProxy="ssh" for "kernel.org"
+    gitProxy=default-proxy ; for the rest 
+
+[include]
+    path = /path/to/foo.inc ; include by absolute path
+    path = foo ; expand "foo" relative to the current file
+    path = ~/foo ; expand "foo" in your $HOME directory
