@@ -1,5 +1,6 @@
 # furry-octo-tribble
-
+ <h5>use prompt cmd</h5>
+ * http://www.cisco.com/c/en/us/td/docs/wireless/access_point/12-3_2_JA/command/reference/i1232cr/cr32cli.html
  http://yum.baseurl.org/wiki/RepoCreate
    <font color="#567d56">
 * auth  dev app  example  : leak
