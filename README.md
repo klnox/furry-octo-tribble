@@ -1,3 +1,6 @@
+http://klnox.github.io/furry-octo-tribble/gist/playgist.html
+
+
 # furry-octo-tribble
  <h5>use prompt cmd</h5>
  * http://www.cisco.com/c/en/us/td/docs/wireless/access_point/12-3_2_JA/command/reference/i1232cr/cr32cli.html
