@@ -1,4 +1,4 @@
-http://klnox.github.io/furry-octo-tribble/.gist/playgist.html
+http://klnox.github.io/furry-octo-tribble/playgist.html
 
 
 # furry-octo-tribble
