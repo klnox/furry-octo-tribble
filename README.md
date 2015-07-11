@@ -1,4 +1,4 @@
-http://klnox.github.io/furry-octo-tribble/.gist/playgist.py //  defect file copy in gh-pages
+http://klnox.github.io/furry-octo-tribble/.gist/playgist.html
 
 
 # furry-octo-tribble
