@@ -9,7 +9,10 @@
      <INPUT TYPE="button" NAME="button" Value="Transform" onClick="decodeMessage(this.form)">
      </FORM>
      <div id="content_div"><hr></hr></div>
-
+<style>
+ #content-div{background-color:#56d37e;height:21px;}    
+     
+</style>
 <script>
 function decodeMessage(){
  document.getElementById('content_div').innerHTML = "<b>Your message: </b>" + message;
