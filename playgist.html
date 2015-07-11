@@ -4,7 +4,15 @@
 </head>
 <body>
 <h5>gist application test</h5>
+     <FORM NAME="myform" ACTION="" METHOD="GET">Message: <BR>       <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>       <INPUT TYPE="button" NAME="button" Value="Transform" onClick="decodeMessage(this.form)">
+     </FORM>
+     <div id="content_div"></div>
+
 <script>
+function decodemessage(){
+ document.getElementById('content_div').innerHTML = "<b>Your message: </b>" + message;
+};
+}
  function getHtml() {    
   var params = {};  
   params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.TEXT;  
