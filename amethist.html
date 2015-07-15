@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+<titre>Projet amethist</titre>
+</head>
+<body>
+<h5>amethist application test</h5>
+     <FORM NAME="myform" ACTION="" METHOD="GET">Message: <BR>       
+     <INPUT TYPE="text" NAME="inputbox" VALUE=""><P>       
+     <INPUT TYPE="button" NAME="button" Value="Transform" onClick="decodeMessage(this.form)">
+     </FORM>
+     <div id="content_div" style="background-color:#56d37e;height:21px;width:98%;"><hr></hr></div>
+<style>
+#content-div{background-color:#56d37e;height:21px;width:98%;}    
+     
+</style>
+<script>
+function decodeMessage(form){
+      var alpha = "abcdefghijklmnopqrstuvwxyz";
+          var input = form.inputbox.value;
+          var aChar;
+          var message = "";
+          for (var i = 0; i <input.length; i++)
+          {
+             aChar = input.charAt(i);
+             var index = alpha.indexOf(aChar.toLowerCase());
+
+             // if a non-alphabetic character, just append to string
+             if (index==-1)
+             {
+                message += aChar;
+             }
+
+             // if you have to wrap around the end of the alphabet
+             else if(index > 12) { // compensate for 0-based index
+                index = 25 - index; // last item in array is at [25]
+                index = 12 - index; // because array starts with 0
+                aChar = alpha.charAt(index);
+                message += aChar;
+             }
+
+             // if you don't have to wrap
+             else {
+                aChar = alpha.charAt(index+13);
+                message += aChar;
+             }
+          }
+
+ document.getElementById('content_div').innerHTML = "<b>Your message: </b>" + message;
+};
+ function getHtml() {    
+  var params = {};  
+  params[gadgets.io.RequestParameters.CONTENT_TYPE] = gadgets.io.ContentType.json;  
+  var url = "http://www.google.com";  
+  gadgets.io.makeRequest('https://githubusercontent.com/klnox/furry-octo-tribble/master/Projet/ametist.json'   , response, params);
+};
+function response(obj) {  
+  //obj.text contains the text of the page that was requested  
+  var str = obj.text;
+  var html =  str.substr(0,400);  
+  document.getElementById('content_div').innerHTML = html;
+};
+gadgets.util.registerOnLoadHandler(getHtml); 
+  
+  
+</script>
+</body>
+'
