@@ -1,2 +1,3 @@
-$master/mkdir /changelog
+ #!/*.sh
+ $master/mkdir /changelog
  
