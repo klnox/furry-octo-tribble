@@ -1,6 +1,9 @@
 http://klnox.github.io/furry-octo-tribble/playgist.html
-
-
+<h5>
+Concrètement, hub s'installe comme un wrapper de la ligne de commande git 
+avec des fonctionnalités spécifiques à Github. Commencez dans un premier temps par 
+installer hub et créer un alias git pointant sur la ligne de commande fraichement installée.
+</h5>
 # furry-octo-tribble
  <h5>use prompt cmd</h5>
  * http://www.cisco.com/c/en/us/td/docs/wireless/access_point/12-3_2_JA/command/reference/i1232cr/cr32cli.html
