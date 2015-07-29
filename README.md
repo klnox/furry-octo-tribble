@@ -3,6 +3,17 @@ http://klnox.github.io/furry-octo-tribble/playgist.html
 Concrètement, hub s'installe comme un wrapper de la ligne de commande git 
 avec des fonctionnalités spécifiques à Github. Commencez dans un premier temps par 
 installer hub et créer un alias git pointant sur la ligne de commande fraichement installée.
+
+ 	mkdir -p ~/bin 
+
+	curl http://defunkt.io/hub/standalone -sLo ~/bin/hub 
+
+	chmod +x ~/bin/hub 
+
+	alias git=~/bin/hub 
+
+	git version 
+
 </h5>
 # furry-octo-tribble
  <h5>use prompt cmd</h5>
